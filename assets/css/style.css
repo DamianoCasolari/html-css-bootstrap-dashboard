@@ -1,0 +1,16 @@
+/* utility selector */
+
+:root {
+--my-gray-select : #e5e5e5;
+}
+
+
+/* background */
+
+.bg_gray {
+    background-color: var(--my-gray-select) !important;
+}
+
+.fa-bell {
+    color: #ff8f00;
+}
