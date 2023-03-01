@@ -1,7 +1,7 @@
 /* utility selector */
 
 :root {
---my-gray-select : #e5e5e5;
+    --my-gray-select: #e5e5e5;
 }
 
 
@@ -15,8 +15,56 @@
     color: #ff8f00;
 }
 
+.bg_sidebar {
+    background: rgb(18,41,63);
+    background: linear-gradient(30deg, rgba(18,41,63,1) 77%, rgba(5,30,52,1) 80%);}
 
 
 
-/* animation  */
+
+/* ---------WRAPPER SIDEBAR + MAIN -------- */
+
+
+/* ---------SIDEBAR-------- */
+
+.sidebar {
+    height: calc(100vh - 90px);
+    position: relative;
+    top:90px;
+    left: 0;
+}
+
+
+.nav-link span { 
+    display: none;
+}
+
+/* ---------MAIN-------- */
+
+.top_main {
+    position: relative;
+    top:90px;
+    z-index: -1;
+}
+
+
+
+/* ---------ANIMATION-------- */
+
+
+
+
+
+/* ---------MEDIA QUERY-------- */
+
+@media screen and (min-width:992px) {
+
+    .sidebar {
+        width: 170px;
+    }
+    .nav-link span { 
+        display: inline-block;
+    }
+}
+
 

@@ -36,8 +36,9 @@
                         <button class="bg-transparent border-0" type="submit"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </span>
-                    <input type="text" class="form-control border-0 bg_gray" placeholder="Prova a cercare: Lezioni di Laravel"
-                        aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control border-0 bg_gray"
+                        placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
             </form>
             <!-- --end_SEARCH--  -->
@@ -58,34 +59,71 @@
                     </a>
                 </li>
             </ul>
-             <!-- --end_setting--  -->
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa fa-bell fa-lg px-3" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- --end_dropdown--  -->
+            <!-- --end_setting--  -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bell fa-lg px-3" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- --end_dropdown--  -->
         </div>
     </header>
     <!-- /#app_header -->
-    <div id="wrapper">
-        <aside id="sidebar">
-            <div class="siderbar">
-                
+    <div id="wrapper" class="d-flex">
+        <aside id="app_sidebar">
+            <div class="sidebar bg_sidebar p-3">
+                <ul class="navbar-nav navbar-dark align-items-cente h-100 me-lg-3">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-home fa-lg px-3" aria-hidden="true"></i><span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ms-1" href="#">
+                            <i class="fa fa-chart-simple fa-lg px-3" aria-hidden="true"></i><span>Stats</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-signal fa-lg px-3" aria-hidden="true"></i><span>Signal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item flex-grow-1 ">
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-gear fa-xl px-3" aria-hidden="true"></i><span>Admin</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-
-
         </aside>
         <!-- /#sidebar -->
-        <main id="app_main"></main>
+        <main id="app_main" class="flex-grow-1">
+            <div class="top_main container-fluid bg-primary">
+                <div class="row text-light">
+                    <div class="col-12 col-lg-4 p-3">Nuovo Studente <button type="button" class="btn btn-outline-light mx-3">+</button></div>
+                    <div class="col-12 col-lg-4 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores?</div>
+                    <div class="col-12 col-lg-4 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores?</div>
+                </div>
+
+               
+            </div>
+            <!-- /.top_main -->
+            <div class="foot_main">
+
+            </div>
+            <!-- /.foot_main -->
+
+
+        </main>
         <!-- /#app_main -->
     </div>
     <!-- /#wrapper -->
