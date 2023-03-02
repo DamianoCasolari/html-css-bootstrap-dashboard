@@ -106,8 +106,9 @@
     <main id="app_main" class="flex-grow-1 overflow-auto">
       <div class="top_main container-fluid bg-primary">
         <div class="row text-light align-items-center p-2">
-          <div class="col-12 col-lg-3 text-lg-end p-3 order-lg-3">Nuovo Studente <button
-              class="btn btn-outline-light mx-3 fs-3 lh-1 text-light" type="button" data-bs-toggle="offcanvas"
+          <div class="col-12 col-lg-3 text-lg-end p-3 order-lg-3">
+            <span class="my-2 d-inline-block"> Nuovo studente</span>
+            <button class="btn btn-outline-light ms-2 fs-3 lh-1 text-light" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               <i class="fa-solid fa-plus fa-xs"></i>
             </button>
@@ -208,7 +209,7 @@
                     <tr>
                       <th class="w-50" scope="col">Nome</th>
                       <th scope="col" class="d-none d-lg-table-cell">Data inizion</th>
-                      <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                      <th scope="col" class="d-none d-xl-table-cell">ROI</th>
                       <th scope="col">Stato</th>
                       <th scope="col">Azioni</th>
                     </tr>
@@ -220,12 +221,10 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-success align-middle">Done</div>
                       </td>
-                      <!-- <td class="badge text-bg-success align-middle">Done
-                                            </td> -->
                       <td>
                         <button type="button" class="btn btn-outline-secondary"> <i
                             class="fa-solid fa-pencil"></i></button>
@@ -239,12 +238,10 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-success align-middle">Done</div>
                       </td>
-                      <!-- <td class="badge text-bg-success align-middle">Done
-                                            </td> -->
                       <td>
                         <button type="button" class="btn btn-outline-secondary"> <i
                             class="fa-solid fa-pencil"></i></button>
@@ -258,12 +255,10 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-success align-middle">Done</div>
                       </td>
-                      <!-- <td class="badge text-bg-success align-middle">Done
-                                            </td> -->
                       <td>
                         <button type="button" class="btn btn-outline-secondary"> <i
                             class="fa-solid fa-pencil"></i></button>
@@ -277,12 +272,10 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-danger align-middle">Feiled</div>
                       </td>
-                      <!-- <td class="badge text-bg-success align-middle">Done
-                                            </td> -->
                       <td>
                         <button type="button" class="btn btn-outline-secondary"> <i
                             class="fa-solid fa-pencil"></i></button>
@@ -296,7 +289,7 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-warning text-white align-middle">process</div>
                       </td>
@@ -315,7 +308,7 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-success align-middle">Done</div>
                       </td>
@@ -334,7 +327,24 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
+                      <td>
+                        <div class="badge text-bg-success align-middle">Done</div>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary"> <i
+                            class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary"><i
+                            class="fa-solid fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="avatar code">
+                        <span class="ms-2">Classe 75</span>
+                      </td>
+                      <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-success align-middle">Done</div>
                       </td>
@@ -353,26 +363,7 @@
                         <span class="ms-2">Classe 75</span>
                       </td>
                       <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
-                      <td>
-                        <div class="badge text-bg-success align-middle">Done</div>
-                      </td>
-                      <!-- <td class="badge text-bg-success align-middle">Done
-                                            </td> -->
-                      <td>
-                        <button type="button" class="btn btn-outline-secondary"> <i
-                            class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-trash"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="avatar code">
-                        <span class="ms-2">Classe 75</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-xl-table-cell">20%</td>
                       <td>
                         <div class="badge text-bg-danger align-middle">Feiled</div>
                       </td>
