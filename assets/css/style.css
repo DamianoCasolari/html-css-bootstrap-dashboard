@@ -39,9 +39,17 @@
 
 /* ---------MAIN-------- */
 
+#app_main {
+    height: calc(100vh - 90px);
+}
+
 .top_main .badge {
     background-color: var(--my-blu-badge);
     
+}
+
+.todo .form-check-input {
+    aspect-ratio: 1 /1;
 }
 
 
