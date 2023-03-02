@@ -76,6 +76,10 @@ img {
 
 /* ---------ANIMATION-------- */
 
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.395);
+}
+
 
 /* ---------MEDIA QUERY-------- */
 
@@ -89,6 +93,7 @@ img {
     .nav-link span { 
         display: inline-block;
     }
+
 
     /* main  */
 
