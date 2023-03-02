@@ -1,9 +1,17 @@
+/* Universal Selector */
+
+img {
+    max-width: 100%;
+}
+
+
 /* utility selector */
 
 :root {
     --my-gray-select: #e5e5e5;
     --my-blu-badge: #165bba;
 }
+
 
 /* Background and Color*/
 
@@ -18,9 +26,9 @@
 
 .bg_sidebar {
     background: rgb(18,41,63);
-    background: linear-gradient(40deg, rgba(18,41,63,1) 85%, rgba(5,30,52,1) 85%);}
-
-
+    background: linear-gradient(40deg, rgba(18,41,63,1) 82%, rgba(5,30,52,1) 82%);}
+    /* with background image  */
+    /* background-image: url(../img/sidebar-bg.png); */ 
 
 
 /* ---------WRAPPER SIDEBAR + MAIN -------- */
@@ -39,6 +47,8 @@
 
 /* ---------MAIN-------- */
 
+/* Top_main  */
+
 #app_main {
     height: calc(100vh - 90px);
 }
@@ -51,6 +61,21 @@
 .todo .form-check-input {
     aspect-ratio: 1 /1;
 }
+
+/* body_main  */
+
+#app_main {
+    min-width: 250px ;
+}
+
+.table img {
+    height: 30px;
+}
+
+.table th:not(th:first-child), .table td:not(td:first-child) {
+    text-align: center;
+}
+
 
 
 
@@ -74,6 +99,8 @@
     }
 
     /* main  */
+
+
     .top_main .offcanvas-end {
         width: 50% !important;
     }
@@ -81,6 +108,9 @@
     .rounded-circle ~ .badge {
         display: inline-block !important;
     }
+
+
+
 }
 
 
