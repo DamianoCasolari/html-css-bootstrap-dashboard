@@ -2,8 +2,8 @@
 
 :root {
     --my-gray-select: #e5e5e5;
+    --my-blu-badge: #165bba;
 }
-
 
 /* Background and Color*/
 
@@ -11,13 +11,14 @@
     background-color: var(--my-gray-select) !important;
 }
 
+
 .fa-bell {
     color: #ff8f00;
 }
 
 .bg_sidebar {
     background: rgb(18,41,63);
-    background: linear-gradient(30deg, rgba(18,41,63,1) 80%, rgba(5,30,52,1) 80%);}
+    background: linear-gradient(40deg, rgba(18,41,63,1) 85%, rgba(5,30,52,1) 85%);}
 
 
 
@@ -38,7 +39,10 @@
 
 /* ---------MAIN-------- */
 
-
+.top_main .badge {
+    background-color: var(--my-blu-badge);
+    font-size: calc(0.75em + 0.2vw);
+}
 
 
 
@@ -64,6 +68,10 @@
     /* main  */
     .top_main .offcanvas-end {
         width: 50% !important;
+    }
+
+    .rounded-circle ~ .badge {
+        display: inline-block !important;
     }
 }
 
