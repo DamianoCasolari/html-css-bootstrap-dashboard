@@ -109,10 +109,71 @@
         <main id="app_main" class="flex-grow-1">
             <div class="top_main container-fluid bg-primary">
                 <div class="row text-light text-lg-center">
-                    <div class="col-12 col-lg-4 p-3 order-lg-3">Nuovo Studente <button type="button"
-                            class="btn btn-outline-light mx-3 fs-3 lh-1">
-                            <i class="fa-solid fa-plus fa-xs"></i>
-                        </button>
+                    <div class="col-12 col-lg-4 p-3 order-lg-3">Nuovo Studente <button class="btn btn-outline-light mx-3 fs-3 lh-1 text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-plus fa-xs"></i>
+                      </button>
+                   
+                      <div class="offcanvas offcanvas-end text-dark text-start w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h4 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nome studente</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="first_name" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="first_name">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="last_name" class="form-label">Cognome</label>
+                              <input type="text" class="form-control" id="last_name">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Stato</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Scegli...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Cap</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">salva</button>
+                              <button type="reset" class="btn btn-warning">salva</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-12 col-lg-4 p-3">
                         <h2>Boolean</h2>

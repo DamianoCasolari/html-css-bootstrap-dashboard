@@ -52,11 +52,18 @@
 
 @media screen and (min-width:992px) {
 
+    /* sidebar  */
+
     .sidebar {
         width: 170px;
     }
     .nav-link span { 
         display: inline-block;
+    }
+
+    /* main  */
+    .top_main .offcanvas-end {
+        width: 50% !important;
     }
 }
 
